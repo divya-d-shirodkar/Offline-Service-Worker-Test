@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
   });
 };
 
-function unregister(){
+function unregister1(){
 	navigator.serviceWorker.getRegistration().then(function(r) { 
     r.unregister();
 });
