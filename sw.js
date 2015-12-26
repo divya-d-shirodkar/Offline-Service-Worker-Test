@@ -1,6 +1,5 @@
 this.addEventListener('install', function(event) {
-	console.log('install');
-  event.waitUntil(console.log('waituntill');caches.open('v1').then(function(cache) {		
+	event.waitUntil(caches.open('v1').then(function(cache) {		
       return cache.addAll([
         '/divya-d-shirodkar/Offline-Service-Worker-Test/master/',
         '/divya-d-shirodkar/Offline-Service-Worker-Test/master/index.html',
