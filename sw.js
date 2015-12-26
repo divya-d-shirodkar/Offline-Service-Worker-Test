@@ -5,9 +5,9 @@ this.addEventListener('install', function(event) {
     caches.open('v1').then(function(cache) {
 		console.log('then of open cache');
       return cache.addAll([
-        '/sw-test/',
-        '/sw-test/index.html',
-        '/sw-test/app.js'        
+        '/Offline-Service-Worker-Test/master/',
+        '/Offline-Service-Worker-Test/master/index.html',
+        '/Offline-Service-Worker-Test/master/app.js'        
       ]);
     })
   );
