@@ -1,13 +1,10 @@
 this.addEventListener('install', function(event) {
 	console.log('install');
-  event.waitUntil(
-	console.log('waituntill');
-    caches.open('v1').then(function(cache) {
-		console.log('then of open cache');
+  event.waitUntil(console.log('waituntill');caches.open('v1').then(function(cache) {		
       return cache.addAll([
-        '/Offline-Service-Worker-Test/master/',
-        '/Offline-Service-Worker-Test/master/index.html',
-        '/Offline-Service-Worker-Test/master/app.js'        
+        '/divya-d-shirodkar/Offline-Service-Worker-Test/master/',
+        '/divya-d-shirodkar/Offline-Service-Worker-Test/master/index.html',
+        '/divya-d-shirodkar/Offline-Service-Worker-Test/master/app.js'        
       ]);
     })
   );
